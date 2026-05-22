@@ -1,7 +1,7 @@
 # **Analysis of novel L2 Anti-Cheat as it exists today**
 
 # Disclaimer: 
-# This is for gaming anti-cheat software, this is an anlysis of the project and it is just a readme file.  The project I am reviewing does requires installing and using it, it does NOT require purchasing any kind of pre-mined token from the forked original project that was created four months ago as what is source available on GitHub and forked here, as far as I can see as well.  To be clear at the start I have no affiliation with this project I just discovered it and this is just a breakdown with pros and cons and also provides proposals for different architectures too and comparisons.
+# This is for gaming anti-cheat software, this is an analysis of the project and it is just a readme file.  The project I am reviewing does require installing and using it, it does NOT require purchasing any kind of pre-mined token from the forked original project that was created four months ago as what is source available on GitHub and forked here, as far as I can see as well.  To be clear at the start I have no affiliation with this project I just discovered it and this is just a breakdown with pros and cons and also provides proposals for different architectures too and comparisons.
 
 # Below is just a readme with a simple breakdown of the technicals of this project below as well as pros and cons, and comparisons to this novel technology on Bitcoin's L2 which would require significant further development and does not exist yet today.  As far as I can tell this is free software for what is referenced below after this bold text at the beginning.
 
