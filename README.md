@@ -7,9 +7,9 @@
 
 # This is a fork of a public SDK repository from an Ethereum-based project. **jimbrend is not affiliated with this project in any way.** This project is not being linked directly here to avoid promoting its associated token — anyone interested can do their own due diligence and find it independently. This is purely a short technical breakdown and architectural analysis of the system as it exists today. Nothing here constitutes financial advice.  Bitcoin L2 in comparison is not a token and lightning network already supports free instant transactions on Cash App today from cash balance and Strike lightning wallets not requiring purchasing Bitcoin or any Token initially this is different and what I have historically worked on after any type of Solidity programming on Ethereum, and Lightning Network also supports lightning verification which is just an Authentication system (I am not supporting any token or affiliated with any token at this time, this is mostly the Bitcoin maxi ethos to not support any other tokens because they are Proof of Stake, centralized control, and pre-mined).
 
-# Analysis by @jimbrend. No affiliation with the project forked or its team. Not financial advice.
+# Analysis by [@jimbrend](https://github.com/jimbrend/). No affiliation with the project forked or its team. Not financial advice.
 
-3 Below is just a readme witha simple breakdown of the technicals of this project below as well as pros and cons to peruse and not intended for installation but just analysis, and comparisons to this novel technology on Bitcoin's L2 which would require significant further development and does not exist yet how it does on the forked project's systems today.
+# Below is just a readme witha simple breakdown of the technicals of this project below as well as pros and cons to peruse and not intended for installation but just analysis, and comparisons to this novel technology on Bitcoin's L2 which would require significant further development and does not exist yet how it does on the forked project's systems today.
 
 ---
 
