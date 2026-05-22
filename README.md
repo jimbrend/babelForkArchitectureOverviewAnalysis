@@ -55,6 +55,33 @@ The anti-cheat rApp feeds behavioral signals (mouse movements, reaction times, k
 
 ---
 
+## The Product as It Exists Today — Main Web Presence & Demo
+
+The primary landing page for this project's application layer can be found at **[realitynet.xyz/rapps](https://realitynet.xyz/rapps/#see_case_studies)**. This is the main public-facing product page and the best starting point for anyone wanting to evaluate what has actually been built and shipped.
+
+### What You'll Find on That Page
+
+The page is structured around the core pitch — that apps should run on distributed player/user machines rather than centralized servers — and includes the following:
+
+- **Case Study 01: Cyberlete Anti-Cheat** — Listed as *"Live on Reality Network."* This is the primary working demonstration of the technology described in this repo. The case study outlines how the system verifies every player action in real-time across player-run nodes, separating human play from bot activity, with consensus achieved in under 15 milliseconds. It references a live deployment tested against real competitive matches (including Call of Duty).
+- **Case Study 02: ChainStats** — A blockchain analytics rApp listed as joining the network, with a full case study noted as coming soon.
+- **YouTube Demo Video** — The project's YouTube channel (**@TheRealityNet**) hosts a video titled *"Cyberlete Anti-Cheat rApp With Live Gameplay"* showing the anti-cheat system running live on their testnet with real gameplay footage. This is the clearest current demonstration of the product working in a real environment. It can be found via the channel linked in the page footer or by searching the title directly.
+- **Overview of the anti-cheat software** — The page provides a written breakdown of how Cyberlete functions: player nodes act as distributed referees, behavioral signals are analyzed in real time, and consensus is reached faster than human perception can detect.
+
+### How to Try or Test the App
+
+The page advertises a **"Start Mining on Testnet today"** banner with a downloadable **Reality Portal** client available for **Mac and Windows**. This is the current entry point for anyone wanting to:
+
+- Run a verification node and participate in the network
+- Experience the anti-cheat client from the player/operator side
+- Earn testnet rewards while the mainnet is being finalized
+
+As noted in the Project Status section above, the client is a required per-machine install — there is no browser-based or passive way to participate. The testnet is the current live environment; mainnet launch timing has not been publicly confirmed as of this writing.
+
+For developers, the page also links to GitHub repositories including this SDK (Babel), a starter app (rAppGenius), and the 2MEME tokenomics whitepaper.
+
+---
+
 ## Pros and Cons
 
 ### Cons
