@@ -160,4 +160,54 @@ The original SDK documentation from this forked repository has been preserved at
 
 ---
 
+## Game Compatibility Examples
+
+### Apex Legends — Would This Work, and Does It Work Now?
+
+**Current status: Not compatible as of today.**
+
+Apex Legends is a live-service title developed and operated by Respawn Entertainment, published by EA. It uses **Easy Anti-Cheat (EAC)** as its primary anti-cheat layer, which operates at the kernel level and is integrated directly into the game client and server infrastructure. Respawn and EA control the entire verification stack.
+
+**Why it cannot be plugged into Apex Legends today:**
+
+- The game's API and client architecture do not expose behavioral input data to third-party applications in the way needed for this system to function. The anti-cheat rApp needs a hook into player input streams (mouse, keyboard, timing data) at a low level. Apex Legends does not provide this, and attempting to hook into it externally would be flagged by EAC as a cheat tool itself.
+- There is no official API, SDK, or custom lobby system in Apex that allows third-party verification networks to participate in match-level enforcement.
+- Even Apex's custom lobby feature (used for community tournaments) does not expose the underlying input data or allow external consensus systems to operate alongside the match.
+
+**How it could theoretically work with Apex Legends:**
+
+For a system like this to work with Apex, one of the following would need to be true:
+
+1. **EA/Respawn formally integrates the SDK** — The game developer would need to instrument their game client to share behavioral signals with external verification nodes. This is an engine-level integration, not a bolt-on. It would require EA to actively build toward this architecture, which has not happened.
+2. **A custom game client is built** — If someone were to build a game from scratch (or mod an open-source engine) with this SDK integrated at the input layer, it would work. The existing Cyberlete demo appears to have been built in this way — with a game environment instrumented specifically for the anti-cheat pipeline.
+3. **Apex opens a behavioral data API** — Unlikely given EA's proprietary and monetization interests, but theoretically possible through a formal partnership or licensing arrangement.
+
+In short: the technology is sound and the architecture is capable, but Apex Legends as it exists today is a closed system that would require buy-in from EA and Respawn to integrate. It does not work with Apex now, and no such integration is currently in development as far as can be confirmed publicly.
+
+---
+
+### CS:GO / CS2 ESL Pro League — Would This Work as an Example?
+
+**Current status: Not currently integrated, but architecturally closer to feasible than Apex.**
+
+Counter-Strike (CS:GO and its successor CS2) has a longer history of third-party tournament tooling, external anti-cheat overlays, and competitive integrity infrastructure. ESL Pro League uses both Valve's VAC (Valve Anti-Cheat) and, for top-tier events, **ESIC's monitoring protocols** and **ESL's own Wire anti-cheat** (which requires installing a separate client). This makes the ecosystem already familiar with the per-machine install model that the Reality Network anti-cheat uses.
+
+**Why CS2/ESL Pro League is a more natural fit:**
+
+- **Third-party client precedent already exists.** ESL Wire, FACEIT AC, and ESEA AC are all third-party anti-cheat clients that players must install to compete in those ecosystems. Players in competitive CS are already accustomed to running a second client alongside the game. The adoption barrier that exists for Apex (where EAC is the only option) is much lower in CS.
+- **ESL and tournament operators are independent of Valve.** ESL could in principle mandate a specific anti-cheat client for their Pro League events independently of Valve, the same way they have with their own tools historically.
+- **CS2 has more exposed instrumentation.** The Source 2 engine and CS2's demo/replay systems expose more match data at the application layer than most games. Behavioral signal capture is more tractable here than in a fully locked-down title like Apex.
+
+**What would need to happen for ESL Pro League integration:**
+
+1. **ESL adopts the client as a tournament requirement.** ESL would need to replace or supplement their current Wire/FACEIT tooling with the Reality Network portal client. This is a business and legal decision, not purely a technical one.
+2. **CS2 behavioral signals get properly hooked.** The client would need to instrument CS2's input pipeline — still requires access to the game process, but in the CS competitive ecosystem this is more precedented (FACEIT and ESEA both do kernel-level monitoring).
+3. **Node operators sufficient for pro-level matches.** For ESL Pro League specifically, the stakes are high enough that the network would need a sufficient number of verified, low-latency nodes to ensure reliable consensus during matches. Testnet-level node count may not be sufficient for pro events without further network growth.
+
+**Honest assessment:**
+
+Of all the major esports titles, Counter-Strike's competitive ecosystem is the most structurally compatible with this approach. The per-machine install norm, the independent tournament operator model, and the game's relative openness to third-party tooling all point in the same direction. It is not a plug-and-play solution today, but the path from here to a real ESL Pro League integration is shorter than it would be for Apex Legends or most other major titles. It would require ESL's organizational buy-in and a formal integration effort — neither of which has occurred as of this writing — but neither is technically unreasonable.
+
+---
+
 *Analysis by jimbrend. No affiliation with the project or its team. Not financial advice.*
