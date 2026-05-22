@@ -177,31 +177,259 @@ High-level official events (ALGS, etc.) benefit from publisher-level tools and d
 
 ### All Major Tournament Platforms (as of 2026)
 
-| Platform | Notable for |
-|---|---|
-| **Battlefy** | Apex Legends Global Series qualifiers, Valorant, LoL, Rocket League, college esports |
-| **Challengermode** | Apex, FPS titles, custom competitive spaces with monetization |
-| **Challonge** | Simple bracket maker, any game, widely used for community events |
-| **Toornament** | Comprehensive tournament management for organizers |
-| **Start.gg** (formerly smash.gg) | Fighting games, broad esports support |
-| **Repeat.gg** | Cash-prize tournaments with auto-tracking for supported titles |
-| **Checkmate Gaming (CMG)** | Cash tournaments across console and PC |
-| **Z League** | Community play for Apex, Warzone, and similar titles |
-| **Epulze** | Multi-title including FPS |
-| **Kafu Games** | Regional (Middle East, Saudi Arabia) with significant prize pools |
-| **RivalN** | Mobile, console, and PC tournament support |
-| **XP League** | Youth-focused esports leagues |
-| **AVGL / BoomTV** | Apex and other titles with streamer/community focus |
-| **ESL** | Major organizer for CS2, Dota 2, multi-title pro events |
-| **BLAST** | Premium CS2 and FPS league events |
-| **DreamHack** | Festival-style events, broad game coverage |
-| **Riot (VALORANT)** | First-party competitive with Vanguard kernel-level AC |
-| **Epic (Fortnite)** | First-party competitive with built-in enforcement |
-| **EA/Respawn (ALGS)** | First-party Apex with EAC + server-side ALGS tools |
-| **Esports World Cup** | Multi-title invitational format with large prize pools |
-| **Discord-only / Twitch-hosted circuits** | Community-run leagues, open qualifiers, charity events |
-
 None of the third-party platforms in this list provide kernel-level or server-integrated anti-cheat enforcement independently of what the game itself provides. They operate on top of the game's existing security layer, not beneath it or alongside it at a privileged level.
+
+---
+
+#### [Battlefy](https://battlefy.com)
+
+Battlefy is one of the most widely used third-party tournament platforms in North America, with a strong track record running official qualifier circuits for major publishers including Apex Legends Global Series open qualifiers, Valorant, League of Legends, and Rocket League. Its organizer tooling is robust and supports everything from registration and check-in to match reporting and bracket automation. The platform also has a strong foothold in college esports through partnerships with collegiate leagues.
+
+- Automated bracket management, match reporting, and participant check-in
+- Supports custom registration forms, team management, and prize tracking
+- API access for developers building custom integrations on top of their tournament infrastructure
+
+**Use cases:** Official publisher qualifier circuits, college esports leagues, multi-title open tournaments, large-scale community events requiring automated bracket management.
+
+---
+
+#### [Challengermode](https://www.challengermode.com)
+
+Challengermode positions itself as a competitive gaming platform with built-in monetization, allowing organizers to create paid tournaments, leagues, and ladders across a range of titles including Apex Legends, CS2, and Valorant. It supports both free and premium competitive formats and has tools for organizers who want to build a sustained competitive brand around their community. The platform also supports streamer and content creator integrations for community-facing events.
+
+- Full tournament and league lifecycle management with monetization options
+- Custom competitive spaces and branding for organizers
+- Built-in payment processing for entry fees and prize payouts
+
+**Use cases:** Monetized community tournaments, recurring league formats, creator-run competitive scenes, organizers building a sustained competitive platform around a specific title or audience.
+
+---
+
+#### [Challonge](https://challonge.com)
+
+Challonge is one of the oldest and most recognized bracket management tools in competitive gaming. It supports a wide range of bracket formats — single elimination, double elimination, round robin, Swiss, and more — and is straightforward to set up for any game. Its simplicity makes it a go-to for community organizers who need reliable bracket management without a full platform investment. Challonge also offers an API and embeddable widgets that integrate cleanly into Discord or custom websites.
+
+- Supports every major bracket format with flexible match reporting
+- Embeddable bracket widgets for Discord, Twitch overlays, or custom sites
+- Free tier available; premium adds more customization and organizer features
+
+**Use cases:** Community bracket tournaments of any size, quick-setup events, supplementary bracket management for organizers using Discord or other primary tooling, any game or format.
+
+---
+
+#### [Toornament](https://www.toornament.com)
+
+Toornament is a professional-grade tournament management platform designed for organizers who need granular control over every aspect of their event. It supports complex tournament formats, multi-stage competitions, and large participant counts, and is used by both community organizers and professional event producers. The platform offers a white-label option for organizers who want a branded experience, and its API is one of the most comprehensive in the space.
+
+- Advanced multi-stage tournament formats with full configuration control
+- White-label and custom branding options for professional events
+- Comprehensive API for building custom tournament experiences on top of the platform
+
+**Use cases:** Professional and semi-professional tournaments, multi-stage competitive events, organizers who need full configurability and a branded experience, publishers and event companies running large-scale official competitions.
+
+---
+
+#### [Start.gg](https://www.start.gg) *(formerly smash.gg)*
+
+Start.gg is the dominant platform for fighting game tournaments and has expanded broadly into other esports. It handles registration, seeding, bracket management, check-in, and results in a unified interface that is deeply familiar to competitive players across many communities. The platform's social and community features — including player profiles, career stats, and event history — make it more than just a bracket tool; it functions as a competitive identity layer for players.
+
+- Player profiles with full event history and career statistics across supported titles
+- Highly developed seeding tools and bracket management for large events
+- Strong community adoption in fighting games, with growing presence in FPS and other titles
+
+**Use cases:** Fighting game tournaments at any scale, events where player seeding and history matter, communities that want a persistent competitive identity layer, multi-day events with complex bracket structures.
+
+---
+
+#### [Repeat.gg](https://repeat.gg)
+
+Repeat.gg specializes in skill-based cash prize tournaments with automated result tracking for supported titles. Players join tournaments, play their matches in the actual game, and results are pulled automatically through game APIs — reducing or eliminating the need for manual score reporting. This makes it particularly well-suited for titles where Repeat.gg has direct API integrations, though coverage varies by game.
+
+- Automated result tracking via game API integrations for supported titles
+- Cash prize tournaments with built-in payment infrastructure
+- Low admin overhead for organizers running high-volume events in supported games
+
+**Use cases:** Cash prize skill tournaments in API-supported titles, high-volume events where manual reporting would be a bottleneck, organizers who want automated result verification without building custom tooling.
+
+---
+
+#### [Checkmate Gaming (CMG)](https://www.checkmategaming.com)
+
+CMG is a cash competition platform focused on head-to-head and small-group matches across console and PC titles, with a strong presence in Call of Duty, Fortnite, and similar competitive titles. It operates a wager-style format where players compete for cash in structured matches, with its own dispute resolution and result verification processes. The platform is designed for players who want competitive cash play outside of official publisher circuits.
+
+- Head-to-head and team cash competitions across multiple titles
+- Built-in dispute resolution and result verification processes
+- Active player base in Call of Duty, Fortnite, and other popular competitive titles
+
+**Use cases:** Cash wager matches and small-format cash competitions, players looking for competitive cash play outside of official circuits, console-focused competitive communities.
+
+---
+
+#### [Z League](https://zleague.gg)
+
+Z League is a community-focused competitive platform built primarily around Apex Legends and Warzone, with a strong emphasis on casual-to-competitive player progression. It features skill-based matchmaking for community tournaments, squad finder tools, and a rewards system designed to keep players engaged across events. The platform is particularly strong for players who want a structured competitive environment without the barrier of invitation-only or qualifier-gated events.
+
+- Skill-based matchmaking for community tournaments in Apex and Warzone
+- Squad finder and team formation tools built into the platform
+- Rewards and progression system encouraging ongoing participation
+
+**Use cases:** Apex Legends and Warzone community competitive play, skill-matched open tournaments, players looking for team formation tools alongside tournament access.
+
+---
+
+#### [Epulze](https://epulze.com)
+
+Epulze is a multi-title tournament platform with a global reach, supporting FPS titles, battle royales, and other competitive games. It offers both free and paid tournament formats and has tools for community organizers as well as larger event producers. Epulze has run events in partnership with gaming companies and hardware brands, giving it experience with both grassroots and sponsored competitive formats.
+
+- Multi-title support across FPS, battle royale, and other competitive games
+- Free and premium tournament formats for organizers at different scales
+- Partnership experience with gaming brands for sponsored event formats
+
+**Use cases:** Multi-title community tournaments, organizers looking for a platform with both grassroots and sponsorship-compatible features, global competitive events across FPS and battle royale titles.
+
+---
+
+#### [Kafu Games](https://kafugames.com)
+
+Kafu Games is a leading esports tournament platform in the Middle East and North Africa (MENA) region, operating some of the largest prize pool events in the region across titles including FIFA, Valorant, PUBG, and others. It is the primary competitive infrastructure for many regional esports communities and has strong relationships with publishers operating in the MENA market. For organizers targeting or based in that region, Kafu is the most relevant platform in this list.
+
+- Dominant regional presence in MENA with publisher relationships and large prize pools
+- Arabic-language support and regional payment infrastructure
+- Multi-title support across the most popular competitive games in the region
+
+**Use cases:** MENA regional esports tournaments, organizers targeting Arabic-speaking communities, publisher-partnered competitive events in the Middle East and North Africa.
+
+---
+
+#### [RivalN](https://www.rivaln.gg)
+
+RivalN is a cross-platform tournament tool supporting mobile, console, and PC competitive play. It is designed to lower the barrier for players who want to compete across devices without platform-specific restrictions. The platform supports a range of titles and formats and is oriented toward players who want accessible competitive infrastructure regardless of their hardware setup.
+
+- Cross-platform support spanning mobile, console, and PC
+- Accessible competitive formats designed for players across device types
+- Multi-title coverage including mobile-first games not well-served by PC-focused platforms
+
+**Use cases:** Cross-platform competitive events, mobile gaming tournaments, communities spanning multiple device ecosystems, organizers who want to run inclusive events regardless of platform.
+
+---
+
+#### [XP League](https://xpleague.com)
+
+XP League is a youth-focused esports organization that runs structured seasonal competitive leagues for players under 18, with a strong emphasis on educational values, sportsmanship, and skill development alongside competition. It operates through a franchise model with local chapters across North America, making it one of the most developed organizations specifically serving the youth competitive gaming space.
+
+- Structured seasonal league format with in-person and online participation
+- Youth-focused with emphasis on character development and sportsmanship alongside competition
+- Franchise model with local chapters providing regional community presence
+
+**Use cases:** Youth esports programs and leagues, educational or after-school competitive gaming initiatives, organizers building structured competitive pipelines for younger players.
+
+---
+
+#### [AVGL / BoomTV](https://boomtv.gg)
+
+AVGL (now operating under the BoomTV brand) runs open esports tournaments and leagues with a strong emphasis on accessibility for emerging and amateur competitive players. BoomTV has run official open qualifier events for titles including Apex Legends and has a track record of connecting community-level competition to larger circuits. The platform is designed to give players a path from open community play toward more official competitive ecosystems.
+
+- Open tournaments and leagues designed for emerging and amateur competitive players
+- Track record running official open qualifiers for major titles including Apex Legends
+- Designed to connect community-level competition with pathways to larger circuits
+
+**Use cases:** Open qualifier events, amateur and emerging player competitive development, community tournaments designed as on-ramps to official competitive ecosystems.
+
+---
+
+#### [ESL](https://www.eslgaming.com)
+
+ESL is one of the oldest and largest esports organizations in the world, operating major professional leagues and tournaments across CS2, Dota 2, Rainbow Six Siege, and many other titles. ESL Pro League is among the most prestigious CS2 circuits globally. For community-level events, ESL also runs open qualifier pathways that connect grassroots play to professional competition. ESL's anti-cheat infrastructure for pro events (ESL Wire and ESIC monitoring protocols) represents some of the most developed third-party tournament enforcement in the industry.
+
+- Professional-tier tournament infrastructure for major titles with global reach
+- Open qualifier pathways connecting community competition to pro circuits
+- ESL Wire anti-cheat client for competitive events (per-machine install required)
+
+**Use cases:** Professional and semi-professional competitive circuits, CS2 and FPS tournament production, events requiring the most developed third-party anti-cheat tooling available outside of first-party systems.
+
+---
+
+#### [BLAST](https://blast.tv)
+
+BLAST is a premium esports event organizer and broadcaster specializing in high-production-value CS2 and FPS competitions. BLAST Premier is one of the premier CS2 circuits, featuring top-tier teams and live arena events. The platform is primarily a professional event producer and broadcaster rather than an organizer tool for community events, but its broadcast infrastructure and event format have set standards for production quality across the industry.
+
+- Premium production quality for CS2 and FPS competitive events
+- BLAST Premier circuit with top professional teams and international events
+- Live arena events and broadcast infrastructure with large global audiences
+
+**Use cases:** Professional CS2 event production, high-production broadcast competitive events, industry benchmark for format and production standards in FPS esports.
+
+---
+
+#### [DreamHack](https://dreamhack.com)
+
+DreamHack is one of the world's longest-running esports and gaming festivals, combining LAN party culture with competitive tournaments, community events, and gaming exhibitions. DreamHack Open events provide competitive opportunities across multiple titles, and the festival format creates an experience that extends well beyond tournament play. Now operating under the ESL/FACEIT parent group, DreamHack maintains its identity as a community-facing event brand.
+
+- Festival format combining competitive tournaments, LAN events, and gaming culture
+- DreamHack Open circuits providing competitive opportunities across multiple titles
+- Long-running brand with strong community identity and event culture
+
+**Use cases:** LAN events and gaming festivals, multi-title open competitive events, community-facing esports experiences beyond online-only tournament formats.
+
+---
+
+#### [Riot Games / VALORANT](https://playvalorant.com/en-us/esports/)
+
+Riot operates its own first-party competitive ecosystem for VALORANT through Valorant Champions Tour (VCT), with regional leagues, international events, and a direct pathway from open play to the top professional level. Riot's Vanguard anti-cheat runs at the kernel level and is integrated directly into the game client, providing the most robust enforcement in the competitive FPS space. Third-party platforms hosting VALORANT events operate on top of Vanguard's enforcement.
+
+- First-party competitive ecosystem with clear player pathways from open to pro
+- Vanguard kernel-level anti-cheat integrated directly into the game client
+- Regional league structure with international championship events
+
+**Use cases:** First-party competitive VALORANT events, the benchmark for integrated anti-cheat enforcement in competitive FPS, reference model for publisher-controlled competitive ecosystems.
+
+---
+
+#### [Epic Games / Fortnite](https://www.epicgames.com/fortnite/en-US/competitive)
+
+Epic runs Fortnite competitive through first-party infrastructure including the Fortnite Champion Series (FNCS) and open cash cups accessible to any player. The competitive system is built into the game client itself, with server-side enforcement and Epic-managed matchmaking for competitive modes. Prize pools for Fortnite competitive have historically been among the largest in esports, with the World Cup having distributed over $30M.
+
+- First-party competitive infrastructure built directly into the game client
+- Open cash cups accessible to all players alongside invitation-only championship events
+- Historically among the largest prize pool events in competitive gaming
+
+**Use cases:** First-party Fortnite competitive events, reference model for accessible open competitive play integrated at the game level, very large prize pool esports events.
+
+---
+
+#### [EA / Respawn — ALGS](https://www.ea.com/games/apex-legends/compete)
+
+The Apex Legends Global Series (ALGS) is the official first-party competitive circuit for Apex Legends, operated by EA and Respawn. ALGS events benefit from full publisher-level enforcement including Easy Anti-Cheat at the kernel level combined with server-side monitoring and dedicated anti-cheat staff reviewing pro match footage. This combination represents the ceiling of anti-cheat enforcement available in Apex today — nothing at the community or third-party level comes close to replicating it.
+
+- Full publisher-level anti-cheat enforcement: kernel-level EAC plus server-side monitoring and dedicated review staff
+- Official competitive pathway from open splits to Pro League and LAN championships
+- The benchmark for anti-cheat enforcement in Apex Legends competitive play
+
+**Use cases:** Official Apex competitive circuit, the standard against which all community anti-cheat efforts are measured, reference point for what publisher-controlled enforcement can achieve that third-party platforms cannot.
+
+---
+
+#### [Esports World Cup](https://esportsworldcup.com)
+
+The Esports World Cup is a multi-title invitational event held annually in Riyadh, Saudi Arabia, featuring top professional teams and players competing across a broad range of titles under one event umbrella. Prize pools are among the largest in the industry across multiple games simultaneously. The event is organized and funded by the Esports World Cup Foundation and has quickly become one of the most significant dates on the global esports calendar.
+
+- Multi-title invitational format with top professional teams across many games simultaneously
+- Among the largest combined prize pools in esports, distributed across multiple titles
+- Rapidly growing global significance as a marquee annual event
+
+**Use cases:** Elite-level invitational competition across multiple titles, the largest single combined prize pool event in esports, showcase of top professional talent globally.
+
+---
+
+#### [Discord](https://discord.com) / [Twitch](https://twitch.tv) — Community-Hosted Circuits
+
+Discord servers and Twitch streams form the operational backbone of the majority of community competitive gaming today. Without any dedicated platform infrastructure, organizers run full tournament circuits — sign-ups, scheduling, match coordination, result reporting, live broadcast, and dispute resolution — using Discord bots, channel organization, and Twitch streams. This is not a fallback; it is the most widely practiced format for community esports globally, and many of the most beloved competitive scenes operate entirely in this space.
+
+- Full tournament operations manageable through Discord bots, channels, and Twitch without any external platform
+- Live Twitch broadcast provides transparency, community engagement, and a live admin presence during matches
+- Infinitely flexible — every rule, format, and workflow is customizable by the organizer
+
+**Use cases:** Community leagues, open qualifiers, charity tournaments, creator-run competitive circuits, any event where the organizer wants full control over the format and experience, Apex Legends custom lobby tournaments as currently run by established community organizers.
 
 ---
 
