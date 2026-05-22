@@ -9,7 +9,7 @@
 
 # Analysis by [@jimbrend](https://github.com/jimbrend/). No affiliation with the project forked or its team. Not financial advice.
 
-# Below is just a readme witha simple breakdown of the technicals of this project below as well as pros and cons to peruse and not intended for installation but just analysis, and comparisons to this novel technology on Bitcoin's L2 which would require significant further development and does not exist yet how it does on the forked project's systems today.
+# Below is just a readme with a simple breakdown of the technicals of this project below as well as pros and cons to peruse and not intended for installation but just analysis, and comparisons to this novel technology on Bitcoin's L2 which would require significant further development and does not exist yet how it does on the forked project's systems today.
 
 ---
 
