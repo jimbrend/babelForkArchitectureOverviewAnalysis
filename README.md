@@ -1,12 +1,15 @@
 # **Analysis of novel L2 Anti-Cheat as it exists today**
 
-# Disclaimer: This is a fork of a public SDK repository from an Ethereum-based project. **jimbrend is not affiliated with this project in any way.** This project is not being linked directly here to avoid promoting its associated token — anyone interested can do their own due diligence and find it independently. This is purely a short technical breakdown and architectural analysis of the system as it exists today. Nothing here constitutes financial advice.
+# Disclaimer: 
+# This is for gaming anti-cheat software, this is an anlysis of the project and it is just a readme file.  The project I am reviewing does requires installing and using it, it does NOT require purchasing any kind of pre-mined token from the forked original project that was created four months ago as what is source available on GitHub and forked here, as far as I can see as well.  To be clear at the start I have no affiliation with this project I just discovered it and this is just a breakdown with pros and cons and also provides proposals for different architectures too and comparisons.
 
-Analysis by @jimbrend. No affiliation with the project forked or its team. Not financial advice.
+# Below is just a readme with a simple breakdown of the technicals of this project below as well as pros and cons, and comparisons to this novel technology on Bitcoin's L2 which would require significant further development and does not exist yet today.  As far as I can tell this is free software for what is referenced below after this bold text at the beginning.
 
-This is for gaming anti-cheat software, this project requires installing and using it, it does not requiring purchasing the pre-mined token from the forked original project that was created four months ago as what is source available on GitHub and forked here, as far as I can see as well
+# This is a fork of a public SDK repository from an Ethereum-based project. **jimbrend is not affiliated with this project in any way.** This project is not being linked directly here to avoid promoting its associated token — anyone interested can do their own due diligence and find it independently. This is purely a short technical breakdown and architectural analysis of the system as it exists today. Nothing here constitutes financial advice.  Bitcoin L2 in comparison is not a token and lightning network and already supports free instant transactions on Cash App today from cash balance and Strike lightning wallets not requiring purchasing Bitcoin or any Token initial this is different and what I have historically worked on after any type of Solidity programming on Ethereum, and Lightning Network also supports lightning verification which is just an Authentication system (I am not in support of any token or affiliated with any token, this is mostly the Bitcoin maxi ethos to not support any other tokens because they are Proof of Stake, centralized control, and pre-mined).
 
-Below is just a readme witha simple breakdown of the technicals of this project below as well as pros and cons, and comparisons to this novel technology on Bitcoin's L2 which would require significant further development and does not exist yet today.
+# Analysis by @jimbrend. No affiliation with the project forked or its team. Not financial advice.
+
+3 Below is just a readme witha simple breakdown of the technicals of this project below as well as pros and cons to peruse and not intended for installation but just analysis, and comparisons to this novel technology on Bitcoin's L2 which would require significant further development and does not exist yet how it does on the forked project's systems today.
 
 ---
 
