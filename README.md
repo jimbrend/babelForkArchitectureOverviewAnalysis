@@ -1,6 +1,10 @@
-# Analysis of novel L2 Anti-Cheat as it exists today
+# **Analysis of novel L2 Anti-Cheat as it exists today**
 
-> **Disclaimer:** This is a fork of a public SDK repository from an Ethereum-based project. **jimbrend is not affiliated with this project in any way.** This project is not being linked directly here to avoid promoting its associated token — anyone interested can do their own due diligence and find it independently. This is purely a short technical breakdown and architectural analysis of the system as it exists today. Nothing here constitutes financial advice.
+# Disclaimer: This is a fork of a public SDK repository from an Ethereum-based project. **jimbrend is not affiliated with this project in any way.** This project is not being linked directly here to avoid promoting its associated token — anyone interested can do their own due diligence and find it independently. This is purely a short technical breakdown and architectural analysis of the system as it exists today. Nothing here constitutes financial advice.#
+
+This is for gaming anti-cheat software, this project requires installing and using it, it does not requiring purchasing the pre-mined token from the forked original project that was created four months ago as what is source available on GitHub and forked here, as far as I can see as well
+
+Below is just a readme witha simple breakdown of the technicals of this project below as well as pros and cons, and comparisons to this novel technology on Bitcoin's L2 which would require significant further development and does not exist yet today.
 
 ---
 
