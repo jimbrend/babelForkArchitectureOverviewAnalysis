@@ -153,6 +153,183 @@ The SDK's safe hylo patterns and zkSNARK-compilable subset guarantee that consen
 
 ---
 
+## Tournament Platform Landscape & Implementation Options
+
+> **Prompt this section is answering:** *"Does any Apex Legends-level anti-cheat exist on any other tournament platform? List all tournament platforms and provide all possible implementations starting with most practical — the first example being a Discord-implemented tournament sign-up system as already practiced for current Apex custom lobbies by [HisAndHersLive](https://www.twitch.tv/hisandherslive), an expert of tournament creation in EA's title. Then proceed with more possible implementations of what exists today for custom hosted lobby tournaments. Include all currently available options, then what can be practically implemented from easiest to what would take the most time — three options with the third being most time-intensive for any future system that could be developed further for that format."*
+
+---
+
+### Does Any Tournament Platform Have Apex Legends-Level Anti-Cheat?
+
+**Short answer: No.**
+
+No widely adopted third-party tournament platform today offers true Apex Legends-level integrated anti-cheat comparable to EA/Respawn's official Easy Anti-Cheat (EAC) kernel-level enforcement combined with server-side monitoring in ranked and ALGS play.
+
+Most third-party tournament platforms rely on one or more of the following:
+- The game's own built-in anti-cheat (EAC, BattlEye, Vanguard) where it applies
+- Manual admin review, VOD/demo checking, or basic behavioral reporting
+- Optional integrations with third-party anti-cheat tools (limited availability)
+- Community trust, Discord moderation, and social accountability for community-run events
+
+High-level official events (ALGS, etc.) benefit from publisher-level tools and dedicated anti-cheat staff. Community and custom lobby tournaments generally do not have access to those enforcement layers.
+
+---
+
+### All Major Tournament Platforms (as of 2026)
+
+| Platform | Notable for |
+|---|---|
+| **Battlefy** | Apex Legends Global Series qualifiers, Valorant, LoL, Rocket League, college esports |
+| **Challengermode** | Apex, FPS titles, custom competitive spaces with monetization |
+| **Challonge** | Simple bracket maker, any game, widely used for community events |
+| **Toornament** | Comprehensive tournament management for organizers |
+| **Start.gg** (formerly smash.gg) | Fighting games, broad esports support |
+| **Repeat.gg** | Cash-prize tournaments with auto-tracking for supported titles |
+| **Checkmate Gaming (CMG)** | Cash tournaments across console and PC |
+| **Z League** | Community play for Apex, Warzone, and similar titles |
+| **Epulze** | Multi-title including FPS |
+| **Kafu Games** | Regional (Middle East, Saudi Arabia) with significant prize pools |
+| **RivalN** | Mobile, console, and PC tournament support |
+| **XP League** | Youth-focused esports leagues |
+| **AVGL / BoomTV** | Apex and other titles with streamer/community focus |
+| **ESL** | Major organizer for CS2, Dota 2, multi-title pro events |
+| **BLAST** | Premium CS2 and FPS league events |
+| **DreamHack** | Festival-style events, broad game coverage |
+| **Riot (VALORANT)** | First-party competitive with Vanguard kernel-level AC |
+| **Epic (Fortnite)** | First-party competitive with built-in enforcement |
+| **EA/Respawn (ALGS)** | First-party Apex with EAC + server-side ALGS tools |
+| **Esports World Cup** | Multi-title invitational format with large prize pools |
+| **Discord-only / Twitch-hosted circuits** | Community-run leagues, open qualifiers, charity events |
+
+None of the third-party platforms in this list provide kernel-level or server-integrated anti-cheat enforcement independently of what the game itself provides. They operate on top of the game's existing security layer, not beneath it or alongside it at a privileged level.
+
+---
+
+### Discord-Based Tournament Sign-Up Systems — Most Practical / Easiest Implementation Today
+
+The most practical and widely proven approach for Apex Legends custom lobbies today is a **Discord-implemented tournament sign-up and management system**, as expertly run by creators like [HisAndHersLive](https://www.twitch.tv/hisandherslive) — a recognized practitioner of tournament operations within EA's title for community and custom lobby events.
+
+**How it works in practice:**
+
+- Players join a dedicated Discord server
+- Sign-ups handled via bot commands, forms, or embedded Google Forms linked in announcements
+- Admins create custom lobbies in Apex using the game's built-in private lobby feature
+- Results reported manually or via screenshots and VOD clips posted in designated channels
+- Brackets managed in Discord channels or linked via Challonge/Battlefy
+- Streams run live on Twitch for transparency and community engagement
+- Minimal infrastructure: Discord bots (for scheduling, role assignment, check-in, verification), Google Sheets or lightweight databases for tracking standings
+
+**Anti-cheat layer at this level:**
+Relies on EA's base EAC enforcement (which applies to all Apex matches regardless of lobby type) plus admin VOD review and community reporting. No additional platform-level anti-cheat beyond what EA provides.
+
+**Why this is the most practical approach today:**
+- Zero to low cost to operate
+- Can be stood up in hours or days
+- Leverages Apex's existing custom lobby tools natively
+- Proven at scale across established community competitive scenes
+- Accessible to organizers without engineering resources
+- Moderation is community-embedded and socially accountable
+
+This model represents the baseline from which more technical implementations build. It is not a lesser approach — it is the proven, widely adopted standard for community-run competitive Apex play.
+
+---
+
+### All Currently Available Options for Custom Hosted Lobby Tournaments
+
+**Tier 1 — Immediate, no-code or low-code:**
+- Discord bot + Challonge/Battlefy bracket embed
+- Google Forms for registration + Sheets for bracket management
+- Twitch stream for live transparency and admin visibility
+- Manual VOD review for suspicious play
+
+**Tier 2 — Semi-automated with platform integrations:**
+- Battlefy or Toornament for structured brackets, check-in, and match reporting
+- Discord webhook integrations for live notifications
+- Challonge API for automated bracket advancement
+- Optional stat-tracking bots for titles with public APIs (Apex's API is limited; workarounds exist via third-party trackers)
+
+**Tier 3 — Custom web platform:**
+- Custom-built registration and bracket web app (React/Next.js + Node or Python backend)
+- Stripe or PayPal integration for entry fees and prize payouts
+- VOD submission portal for demo review
+- Admin dashboard for match management and dispute resolution
+
+**Tier 4 — Advanced / research-level:**
+- Third-party anti-cheat client overlays (where game TOS permits)
+- Machine learning behavioral analysis on recorded match data
+- Integration with decentralized verification concepts as described in this repo (currently requires significant additional development not yet available as a consumer product)
+
+---
+
+### Three Implementation Options: Easiest to Most Time-Intensive
+
+#### Option 1: Discord-First System (Recommended Starting Point — Days to Weeks)
+
+Build on the proven model established by community organizers running Apex custom lobby circuits today.
+
+**Stack:**
+- Discord bot (Discord.py or Discord.js) handling sign-ups, team formation, check-in, and scheduling
+- Lightweight backend: Node.js/Express or Python + SQLite or Postgres for player and standings data
+- Frontend: Discord channel embeds, Google Forms for registration, Sheets for tracking
+- Bracket management: Challonge or Battlefy free tier
+- VOD accountability: Require stream or clip submission for disputed matches
+
+**Anti-cheat:** EA's base EAC applies to all matches. Admin review of flagged clips. Community reporting in moderation channels.
+
+**Time to launch:** Days to a few weeks for a functioning MVP.
+
+**Pros:** Lowest barrier to entry, community-native, works with Apex's current custom lobby system immediately, no hosting costs to start.
+
+**Limitations:** Scales with manual effort from organizers; large events require more admin capacity; no automation beyond what bots can handle.
+
+---
+
+#### Option 2: Mid-Level Web Platform with Integrations (Weeks to a Few Months)
+
+A purpose-built web application that formalizes the tournament experience with structured accounts, payments, and automated bracket progression.
+
+**Stack:**
+- Web app: React or Next.js frontend, Node/Express or FastAPI backend
+- User accounts: Auth0 or custom JWT auth
+- Database: Postgres with match history, standings, and player profiles
+- Payments: Stripe for entry fees and prize disbursement
+- Bracket engine: Custom or adapted open-source (e.g., Challonge API integration)
+- Discord integration: Webhooks for match notifications, bot for announcements
+- VOD portal: S3 or Cloudflare R2 for clip uploads and admin review queue
+
+**Anti-cheat:** Still relies on EA's EAC. Adds structured VOD review workflow, incident reporting forms, and audit trail logging.
+
+**Time to launch:** Several weeks to a few months depending on team size and feature scope.
+
+**Pros:** Professional appearance, better scaling, easier multi-event management, payment and prize automation, cleaner audit trail.
+
+**Limitations:** Requires hosting infrastructure, ongoing maintenance, and still inherits the same anti-cheat ceiling as Option 1 — EA's EAC plus manual review.
+
+---
+
+#### Option 3: Advanced / Future-Oriented System (Months to Years — Most Time-Intensive)
+
+A custom platform that incorporates novel verification concepts — including decentralized or semi-decentralized behavioral analysis — to move beyond reliance on game-provided anti-cheat alone. This option aligns with the architectural concepts explored in the forked project analyzed in this README.
+
+**Stack:**
+- Full web platform as in Option 2, plus:
+- Client-side telemetry agent (with explicit player consent and legal review) capturing behavioral signals during custom lobby matches
+- Behavioral ML model trained on known-clean vs. flagged match data for anomaly detection
+- Optional integration with distributed verification concepts (e.g., the ZK-WASM consensus pipeline from the Babel SDK) if and when such tooling matures to production-readiness for a title like Apex
+- On-chain anchoring of match fairness attestations for tournament results with prize implications
+
+**Anti-cheat ceiling:** Higher than Options 1–2. Not dependent solely on EA's EAC. Behavioral analysis and distributed consensus could catch patterns EAC misses.
+
+**Time to launch:** Months at minimum for a basic behavioral layer; a full decentralized consensus implementation would be a multi-year engineering effort with significant open-source contribution required.
+
+**Pros:** Potential to achieve a meaningfully stronger fairness guarantee than any current off-the-shelf option. Innovative and defensible as a competitive differentiator for high-stakes community events.
+
+**Limitations:** High complexity. Legal and privacy considerations are substantial — particularly for any client-side telemetry or behavioral monitoring (player consent, data storage, GDPR/CCPA). EA/Respawn's Terms of Service for Apex custom lobbies may constrain what a third-party client can do. A fully decentralized anti-cheat equivalent to the system described in this repo does not yet exist in production for a title like Apex, and building it would be a long-term project.
+
+**Recommendation:** Start with Option 1 to validate community interest and establish the organizer presence. Build toward Option 2 to support growth. Treat Option 3 as a research direction for those interested in contributing to the open frontier of decentralized competitive integrity tooling.
+
+---
+
 ## Summary
 
 This is a technically interesting and architecturally novel anti-cheat system with real working software in active beta. Its core innovation — decentralized, ZK-provable behavioral verification at real-time speeds — addresses genuine limitations of current centralized approaches.
